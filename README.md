@@ -1,47 +1,72 @@
-# Semi-Structured RAG Langchain
+# 🚀 Semi-Structured RAG with Langchain
 
-This project is designed to process semi-structured documents and perform question answering using the Retrieval-Augmented Generation (RAG) techniques with the Langchain library.
+This project processes **semi-structured documents** and performs **question answering** using **Retrieval-Augmented Generation (RAG)** techniques with the **Langchain** library. 📄🤖
 
-## Installation
+---
 
-1. #### Install the necessary packages 
-   ! pip install langchain unstructured[all-docs] pydantic lxml langchainhub
+## 🔧 Installation
 
-#### Additionally, ensure you have tesseract and poppler installed
-   ! brew install tesseract poppler
+### 1️⃣ Install Required Packages
+```sh
+pip install langchain unstructured[all-docs] pydantic lxml langchainhub
+```
 
-#### Alternatively, Install the required dependencies listed in the requirements.txt file
-   ! pip install -r requirements.txt
+### 2️⃣ Install Additional Dependencies
+#### 📌 Ensure `tesseract` and `poppler` are installed:
+```sh
+# For macOS
+brew install tesseract poppler
+```
 
-3. #### Command Line Arguments
+### 3️⃣ Install Dependencies from `requirements.txt`
+```sh
+pip install -r requirements.txt
+```
 
-   When running the scripts, you can specify command line arguments to customize the behavior:
+---
 
-   - `--filename`: Path to the PDF file to be processed. Default is `attention.pdf`.
-   - `--path`: Path to the directory containing the PDF file. Default is `./data/`.
+## ⚙️ Command Line Arguments
+You can customize the script execution with the following options:
 
-## Usage
+| Argument | Description | Default Value |
+|----------|-------------|----------------|
+| `--filename` | Path to the PDF file to process | `attention.pdf` |
+| `--path` | Directory containing the PDF file | `./data/` |
 
-#### Main Script
+Example Usage:
+```sh
+python main.py --filename my_document.pdf --path ./documents/
+```
 
-The `main.py` script orchestrates the entire process, from reading PDF files to generating answers to user questions.
+---
 
-#### Running the Main Script
+## 🎯 Usage
 
-To run the main script, use the following command:
+### 🚀 Running the Main Script
+The **`main.py`** script manages the entire pipeline from reading PDF files to answering user queries.
 
-```bash
+Run the script using:
+```sh
 python main.py --filename <path_to_pdf_file> --path <directory_containing_pdf_file>
 ```
-### Note
 
-Make sure to set up your OpenAI API key in your environment or directly in the script if you plan to use OpenAI services.
+🔹 **Make sure to set up your OpenAI API key** in your environment or in the script if you plan to use OpenAI services.
 
-### Contributing
+---
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## 🤝 Contributing
+We welcome contributions! 💡 If you want to make major changes, please **open an issue** first to discuss it.
 
-### License
+To contribute:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m "Your Message"`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Open a Pull Request
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
-# PDF_Question_Answering_RAG_Langchain
+---
+
+## 📜 License
+This project is licensed under the **[MIT License](https://choosealicense.com/licenses/mit/)**.
+
+🚀 **Happy Coding!** 🚀
