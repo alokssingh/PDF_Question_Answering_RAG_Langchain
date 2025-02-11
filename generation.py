@@ -35,7 +35,7 @@ def generation(retriever, question, openai_api_key):
                 | model
                 | StrOutputParser()
         )
-        output = chain.invoke(question)
+        output = chain.invoke(question) #if want to work with multiple questions  chain.batch([multiple questions])
 
         return output
 
