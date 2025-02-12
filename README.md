@@ -4,7 +4,7 @@ This project processes **semi-structured documents** and performs **question ans
 
 ---
 ## 🔧 RAG Pipeline
-(https://github.com/alokssingh/PDF_Question_Answering_RAG_Langchain/blob/main/REG_flow.png)
+![a](https://github.com/alokssingh/PDF_Question_Answering_RAG_Langchain/blob/main/REG_flow.png)
 
 ---
 ## 🔧 Installation
