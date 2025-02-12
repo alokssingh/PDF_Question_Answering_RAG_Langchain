@@ -44,9 +44,9 @@ class PDFProcessor:
                 # Attempt to create a new chunk 3800 chars
                 # Attempt to keep chunks > 2000 chars
                 # Hard max on chunks
-                max_characters=4000,
-                new_after_n_chars=3800,
-                combine_text_under_n_chars=2000,
+                max_characters=4000, #hard maximum limit for chunk size 
+                new_after_n_chars=3800, #start a new chunk after 3,800 characters, ensuring the text is not split mid-sentence
+                combine_text_under_n_chars=2000, # if chunk has less than 2,000 characters, it will be combined with other chunks to avoid too-small segments 
                 image_output_dir_path=self.path,
             )
             return raw_pdf_elements
