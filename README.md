@@ -3,7 +3,10 @@
 This project processes **semi-structured documents** and performs **question answering** using **Retrieval-Augmented Generation (RAG)** techniques with the **Langchain** library. 📄🤖
 
 ---
+## 🔧 RAG Pipeline
+(https://github.com/alokssingh/PDF_Question_Answering_RAG_Langchain/blob/main/REG_flow.png)
 
+---
 ## 🔧 Installation
 
 ### 1️⃣ Install Required Packages
