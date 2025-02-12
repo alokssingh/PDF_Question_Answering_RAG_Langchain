@@ -33,7 +33,7 @@ def embeddings(text_summaries, table_summaries, texts, tables, openai_api_key):
         embedding_function=OpenAIEmbeddings(openai_api_key=openai_api_key)
     )
 
-    # The storage layer for the parent documents
+    # The temp storage layer for the parent documents. used to associate raw text with embeddings
     store = InMemoryStore()
     id_key = "doc_id"
 
