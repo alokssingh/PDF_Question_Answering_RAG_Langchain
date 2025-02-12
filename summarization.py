@@ -26,7 +26,8 @@ def summarize_chains(table_elements, text_elements, openai_key):
         model = ChatOpenAI(temperature=0, model="gpt-3.5-turbo", api_key=openai_key)
         summarize_chain = {"element": lambda x: x} | prompt | model | StrOutputParser()
 
-        # Table - Summaize each chunk
+        # Table - Summaize each chunk Sends multiple table chunks to the model for summarization.
+        #max_concurrency → Allows up to 5 simultaneous API calls to improve efficiency.
         tables = [i.text for i in table_elements]
         table_summaries = summarize_chain.batch(tables, {"max_concurrency": 5})
 
